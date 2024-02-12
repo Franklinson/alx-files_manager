@@ -1,4 +1,5 @@
 #!/usr/bin/node
+// An express server
 
 const express = require('express');
 const router = require('./routes/index');

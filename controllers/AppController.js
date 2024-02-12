@@ -1,5 +1,7 @@
 #!/usr/bin/node
 
+// Definition of endpoints for the redis and mongoDB databases
+
 import redisClient from '../utils/redis';
 import dbClient from '../utils/db';
 
