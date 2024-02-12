@@ -1,3 +1,5 @@
+#!/usr/bin/node
+
 import express from 'express';
 import AppController from '../controllers/AppController';
 
@@ -12,3 +14,4 @@ app.get('/status', (req, res) => {
 app.get('/stats', (req, res) => {
   AppController.getStats(req, res);
 });
+module.exports = app;
