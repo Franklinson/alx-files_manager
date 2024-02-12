@@ -1,7 +1,6 @@
 import { MongoClient } from 'mongodb';
 // Mongodb data storage
 
-
 class DBClient {
   constructor() {
     this.host = 'localhost';
