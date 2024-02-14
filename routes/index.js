@@ -5,6 +5,7 @@ import express from 'express';
 import AppController from '../controllers/AppController';
 import UsersController from '../controllers/UsersController';
 import AuthController from '../controllers/AuthController';
+import FilesController from '../controllers/FilesController';
 
 const app = express();
 
@@ -32,6 +33,10 @@ app.get('/disconnect', (req, res) => {
 
 app.get('/users/me', (req, res) => {
   UsersController.getMe(req, res);
+});
+
+app.post('/files', (req, res) => {
+  FilesController.postUpload(req, res);
 });
 
 module.exports = app;
